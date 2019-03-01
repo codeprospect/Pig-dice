@@ -13,42 +13,66 @@
 
       <h1>PIG DICE</h1>
 
+      <div class="rows" id="rules">
+
         <div class="choices">
+          <div class="col-md-4">
             <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Using One Dice(rules)</h2>
+              <div class="panel-heading" style="background-color: #008fb3;">
+                <h2 class="panel-title">Pig Dice(rules)</h2>
               </div>
-              <div class="panel-body">
+              <div class="panel-body" style="background-color: #33d6ff;">
+                <p>Each turn, a player repeatedly rolls a die until <br> either a 1 is rolled or the player decides to "hold":</p>
                 <ul>
-                  <li>Orci ut velit</li>
-                  <li>Pellentesque cursus justo</li>
-                  <li>In felis condimentum cursus</li>
+                  <li>If the player rolls a 1, they score nothing <br> and it becomes the next player's turn.</li>
+                  <li>If the player rolls any other number, it is <br> added to their turn total and the player's turn continues.</li>
+                  <li>If a player chooses to "hold", their turn total <br> is added to their score, and it becomes the next player's turn.</li>
                 </ul>
               </div>
-              <div class="panel-footer">
-                <p>Panel Footer</p>
+              <div class="panel-footer" style="background-color: #008fb3;">
+                <button type="button" name="button" class="btn btn-info" id="onedii">Pig Dice</button>
               </div>
             </div>
+            </div>
+
+            <div class="col-md-4">
             <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2 class="panel-title">Using Two Dii(rules)</h2>
+              <div class="panel-heading" style="background-color: #cc6600;">
+                <h2 class="panel-title">Two-Dice Pig(rules)</h2>
               </div>
-              <div class="panel-body">
-                <ul>
-                  <li>Orci ut velit</li>
-                  <li>Pellentesque cursus justo</li>
-                  <li>In felis condimentum cursus</li>
-                </ul>
+              <div class="panel-body" style="background-color: #ffa64d;">
+                  <p>1. Two standard dice are rolled. If neither <br> shows a 1, their sum is added to the turn total.</p>
+
+                  <p>2. If a single 1 is rolled, the player scores <br> nothing and the turn ends.</p>
+
+                  <p>3. If two 1s are rolled, the player’s entire <br> score is lost, and the turn ends.</p>
+
+                  <p>4. If a double is rolled, the point total is added <br> to the turn total as with any roll but the player is obligated to roll again </p>
               </div>
-              <div class="panel-footer">
-                <p>Panel Footer</p>
+              <div class="panel-footer" style="background-color: #cc6600;">
+                <button type="button" name="button" class="btn btn-warning" id="twodii">Two-Dice Pig</button>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Two dice(rules)</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading" style="background-color: #00cc00;">
+                  <h2 class="panel-title">Big Pig(rules)</h2>
+                </div>
+                <div class="panel-body" style="background-color: #4dff4d;">
+                  <p>This is the same as Two-Dice Pig, except:</p>
+                  <ul>
+                    <li>If two 1s are rolled, the player adds 25 to <br> the turn total.</li>
+                    <li>If other doubles are rolled, the player adds <br> twice the value of the dice to the turn total.</li>
+                  </ul>
+                </div>
+                <div class="panel-footer" style="background-color: #00cc00;">
+                  <button type="button" name="button" class="btn btn-success" id="bigpig">Big Pig</button>
+                </div>
               </div>
+              </div>
+
             </div>
         </div>
 
@@ -69,15 +93,29 @@
 
 
       <div class="twodice">
-        <div class="col-md-6"
-          <p id="dicea1">
-
-          </p>
+        <div class="col-md-6">
+          <p id="dicea1"></p>
+          <p id="dicea2"></p>
           <button type="button" name="button" id="rolla1" class="btn btn-danger">Player 1</button>
         </div>
         <div class="col-md-6">
+          <p id="diceb1"></p>
           <p id="diceb2"></p>
-          <button type="button" name="button" id="rollb2" class="btn btn-success">Player 2</button>
+          <button type="button" name="button" id="rolla2" class="btn btn-success">Player 2</button>
+        </div>
+      </div>
+
+
+      <div class="pibig">
+        <div class="col-md-6">
+          <p id="diceo1"></p>
+          <p id="diceo2"></p>
+          <button type="button" name="button" id="rollx1" class="btn btn-danger">Player 1</button>
+        </div>
+        <div class="col-md-6">
+          <p id="dicep1"></p>
+          <p id="dicep2"></p>
+          <button type="button" name="button" id="rollx2" class="btn btn-success">Player 2</button>
         </div>
       </div>
 
