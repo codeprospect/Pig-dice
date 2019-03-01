@@ -14,10 +14,25 @@ $(document).ready(function() {
     $("#rules").hide();
   });
 
+var score = 0;
 //this is the one pig section
     $("#roll1").click(function() {
       var result = Math.floor(Math.random() * 6 + 1);
       document.getElementById('dice1').innerHTML =  result;
+      $('#scores').append(result);
+      var playerones = [];
+
+      if (result == 1) {
+        score = 0;
+      } else {
+        playerones.push(result);
+      }
+        $('#hold').click(function() {
+          playerones.forEach(function(playerone) {
+             score += playerone;
+          });
+          alert(score);
+        });
     });
     $("#roll2").click(function() {
       var result2 = Math.floor(Math.random() * 6 + 1);
@@ -30,12 +45,14 @@ $(document).ready(function() {
       var dicea2 = Math.floor(Math.random() * 6 + 1);
       document.getElementById('dicea1').innerHTML = dicea1;
       document.getElementById('dicea2').innerHTML = dicea2;
+      $("#score").append(dicea1 + dicea2);
     });
     $("#rolla2").click(function() {
       var diceb1 = Math.floor(Math.random() * 6 + 1);
       var diceb2 = Math.floor(Math.random() * 6 + 1);
       document.getElementById('diceb1').innerHTML = diceb1;
       document.getElementById('diceb2').innerHTML = diceb2;
+      $("#score2").append(diceb1 + diceb2);
     });
 
 //this is the big pig section
