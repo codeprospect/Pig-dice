@@ -13,6 +13,7 @@ $(document).ready(function() {
     $(".pibig").show();
     $("#rules").hide();
   });
+  
 
     $("#roll1").click(function() {
       document.getElementById('dice1').innerHTML = Math.floor(Math.random() * 6 + 1);
@@ -20,6 +21,7 @@ $(document).ready(function() {
     $("#roll2").click(function() {
       document.getElementById('dice2').innerHTML = Math.floor(Math.random() * 6 + 1);
     });
+
 
     $("#rolla1").click(function() {
       document.getElementById('dicea1').innerHTML = Math.floor(Math.random() * 6 + 1);
@@ -29,6 +31,7 @@ $(document).ready(function() {
       document.getElementById('diceb1').innerHTML = Math.floor(Math.random() * 6 + 1);
       document.getElementById('diceb2').innerHTML = Math.floor(Math.random() * 6 + 1);
     });
+
 
     $("#rollx1").click(function() {
       document.getElementById('diceo1').innerHTML = Math.floor(Math.random() * 6 + 1);
