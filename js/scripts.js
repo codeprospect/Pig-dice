@@ -13,8 +13,8 @@ $(document).ready(function() {
     $(".pibig").show();
     $("#rules").hide();
   });
-  
 
+//this is the one pig section
     $("#roll1").click(function() {
       document.getElementById('dice1').innerHTML = Math.floor(Math.random() * 6 + 1);
     });
@@ -22,7 +22,7 @@ $(document).ready(function() {
       document.getElementById('dice2').innerHTML = Math.floor(Math.random() * 6 + 1);
     });
 
-
+//this is thr two dice pig section
     $("#rolla1").click(function() {
       document.getElementById('dicea1').innerHTML = Math.floor(Math.random() * 6 + 1);
       document.getElementById('dicea2').innerHTML = Math.floor(Math.random() * 6 + 1);
@@ -32,7 +32,7 @@ $(document).ready(function() {
       document.getElementById('diceb2').innerHTML = Math.floor(Math.random() * 6 + 1);
     });
 
-
+//this is the big pig section
     $("#rollx1").click(function() {
       document.getElementById('diceo1').innerHTML = Math.floor(Math.random() * 6 + 1);
       document.getElementById('diceo2').innerHTML = Math.floor(Math.random() * 6 + 1);
