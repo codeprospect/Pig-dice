@@ -54,3 +54,6 @@ h1 {
 .pibig {
   display: none;
 }
+#rules {
+  opacity: 0.9;
+}
