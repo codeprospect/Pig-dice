@@ -9,9 +9,11 @@
     <title>GAME</title>
   </head>
   <body>
+    <div class="container">
     <!-- this is the player one section -->
             <div class="onedice">
-              <div class="col-md-6">
+              <div class="rows">
+              <div class="col-md-6" id="playerone">
                 <p id="dice1">
 
                 </p>
@@ -19,15 +21,18 @@
               </div>
 
     <!-- this is the player two section -->
-              <div class="col-md-6">
+              <div class="col-md-6" id="playertwo">
                 <p id="dice2"> </p>
               </div>
               <p id="scores"></p>
+            </div>
             </div>
 
             <p id="buttons">
             <button type="button" name="button" id="roll1" class="btn btn-danger">Player 1</button>
             <button type="button" name="button" id="hold" class="btn btn-danger">Hold</button>
             </p>
+
+            </div>
   </body>
 </html>

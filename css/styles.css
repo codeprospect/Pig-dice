@@ -8,42 +8,9 @@ h1 {
 #player {
   text-align: center;
 }
-
-/* #dicea1, #dicea2 {
-  height: 100px;
-  width: 100px;
-  margin: 50px auto;
-  border: 1px solid gray;
-  border-radius: 10px;
-  font-size:80px;
-}
-#diceb1, #diceb2, #diceo1, #diceo2, #dicep1, #dicep2 {
-  height: 100px;
-  width: 100px;
-  margin: 50px auto;
-  border: 1px solid gray;
-  border-radius: 10px;
-  font-size:80px;
-} */
 .onedice {
   display: none;
-
 }
-/* .twodice {
-  display: none;
-}
-.choices {
-    text-align: center;
-}
-#rules {
-    text-align: center;
-}
-.panel-body {
-  padding: 5px;
-}
-.pibig {
-  display: none;
-} */
 #rules {
   opacity: 0.9;
 }

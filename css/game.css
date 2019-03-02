@@ -1,4 +1,15 @@
 #buttons {
   text-align: center;
-  transform: translate(50%, -50%);
+  clear: both;
+}
+#playerone {
+  background-color: blue;
+  padding: 50px;
+}
+#playertwo {
+  background-color: red;
+  padding: 50px;
+}
+#dice1 {
+  text-align: center;
 }
