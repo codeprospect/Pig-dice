@@ -8,22 +8,7 @@ h1 {
 #player {
   text-align: center;
 }
-#dice1 {
-  height: 100px;
-  width: 100px;
-  margin: 50px auto;
-  border: 1px solid gray;
-  border-radius: 10px;
-  font-size:80px;
-}
-#dice2 {
-  height: 100px;
-  width: 100px;
-  margin: 50px auto;
-  border: 1px solid gray;
-  border-radius: 10px;
-  font-size:80px;
-}
+
 /* #dicea1, #dicea2 {
   height: 100px;
   width: 100px;
