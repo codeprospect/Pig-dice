@@ -4,9 +4,11 @@
 }
 #playerone {
   padding: 50px;
+  background-color: #ff7777;
 }
 #playertwo {
   padding: 50px;
+  background-color: #3e7ce0;
 }
 #dice1 {
   border-style: solid;
@@ -18,8 +20,30 @@
   border-style: solid;
   border-width: 0.1px;
   padding: 5px;
-  border-left: 5px solid red;
+  border-left: 5px solid blue;
 }
 h1 {
   text-align: center;
+}
+#kichwa, #kichwa2 {
+  font-size: 60px;
+}
+#kichwa {
+  color: red;
+}
+#kichwa2 {
+  color: blue;
+}
+.mascore {
+  text-align: center;
+  font-size: 17px;
+}
+#button {
+  text-align: center;
+  clear: both;
+  display: none;
+}
+.scorer {
+  text-align: center;
+  font-size: 30px;
 }
