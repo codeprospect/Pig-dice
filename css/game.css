@@ -1,8 +1,25 @@
-.container {
-  position: absolute;
+.onedice {
+  opacity: 0.9;
+}
+.result {
   opacity: 0.9;
   top: 50%;
-  transform: translate(30%, -50%);
+  transform: translate(40%, -50%);
+  position: absolute;
+  padding: 30px;
+  padding: 50px;
+  background-color: #ff7777;
+  display: none;
+}
+.result2 {
+  opacity: 0.9;
+  top: 50%;
+  transform: translate(40%, -50%);
+  position: absolute;
+  padding: 30px;
+  padding: 50px;
+  background-color: #3e7ce0;
+  display: none;
 }
 body {
   background-image: url('../img/pig.jpg');
@@ -55,4 +72,7 @@ h1 {
 .scorer {
   text-align: center;
   font-size: 30px;
+}
+#messageA, #messageB, #message2, #message {
+  display: none;
 }

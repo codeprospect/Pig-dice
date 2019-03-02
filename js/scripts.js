@@ -25,7 +25,9 @@ var totalTwo = 0;
         document.getElementById('score1').innerHTML = score;
         $("#buttons").hide();
         $("#button").show();
-
+        $("#messageA").show();
+        $("#message").hide();
+        $("#message2").hide();
       } else {
         playerOnes.push(result);
       }
@@ -43,10 +45,20 @@ var totalTwo = 0;
           playerOnes = [];
           $("#buttons").hide();
           $("#button").show();
+          $("#messageB").show();
+          $("#message").hide();
+          $("#message2").hide();
           totalOne += score;
 
 
           document.getElementById('scorer1').innerHTML = totalOne;
+
+          if (totalOne >= 100) {
+            $(".onedice").hide();
+            document.getElementById('ouput').innerHTML = "HAS WON THE GAME" ;
+            $(".result").show();
+          }
+
         });
 
         $("#roll2").click(function() {
@@ -59,10 +71,12 @@ var totalTwo = 0;
             totalTwo + score;
             $("#buttons").show();
             $("#button").hide();
+            $("#message").show();
+            $("#messageA").hide();
+            $("#messageB").hide();
             document.getElementById('score2').innerHTML = score;
           } else {
             playerTwos.push(result2);
-            res2.push(result2);
           }
         });
 
@@ -76,8 +90,17 @@ var totalTwo = 0;
           playerTwos = [];
           $("#buttons").show();
           $("#button").hide();
+          $("#message2").show();
+          $("#messageA").hide();
+          $("#messageB").hide();
 
           document.getElementById('scorer2').innerHTML = totalTwo;
+
+          if (totalTwo >= 100) {
+            $(".onedice").hide();
+            document.getElementById('ouput').innerHTML = "HAS WON THE GAME" ;
+            $(".result").show();
+          }
         });
 
 
