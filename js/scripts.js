@@ -1,16 +1,17 @@
 $(document).ready(function() {
-  $("#onedii").click(function() {
-    $(".onedice").show();
-    $("#rules").hide();
-  });
+
+function team(players, results, total) {
+  this.players = players;
+  this.results = results;
+  this.total = total;
+}
 
 var score = 0;
-var playerones = [];
-var playerones2 = [];
-var res1 = [];
-var res2 = [];
-var total1 = 0;
-var total2 = 0;
+
+var playerOnes = [];
+var totalOne = 0;
+var playerTwos = [];
+var totalTwo = 0;
 
 //this is the one pig section
     $("#roll1").click(function playOne () {
@@ -19,33 +20,33 @@ var total2 = 0;
 
       if (result == 1) {
         score = 0;
-        playerones = [];
-        total1 += result;
+        playerOnes = [];
+        totalOne += result;
         document.getElementById('score1').innerHTML = score;
         $("#buttons").hide();
         $("#button").show();
 
       } else {
-        playerones.push(result);
+        playerOnes.push(result);
       }
   });
 
 
         $('#hold1').click(function() {
-          playerones.forEach(function(playerone) {
+          playerOnes.forEach(function(playerone) {
              score += playerone;
           });
           document.getElementById('score1').innerHTML = score;
 
-          total1 += score;
+          totalOne += score;
           score = 0;
-          playerones = [];
+          playerOnes = [];
           $("#buttons").hide();
           $("#button").show();
-          total1 += score;
+          totalOne += score;
 
 
-          document.getElementById('scorer1').innerHTML = total1;
+          document.getElementById('scorer1').innerHTML = totalOne;
         });
 
         $("#roll2").click(function() {
@@ -54,29 +55,29 @@ var total2 = 0;
 
           if (result2 == 1) {
             score = 0;
-            playerones2 = [];
-            total2 + score;
+            playerTwos = [];
+            totalTwo + score;
             $("#buttons").show();
             $("#button").hide();
             document.getElementById('score2').innerHTML = score;
           } else {
-            playerones2.push(result2);
+            playerTwos.push(result2);
             res2.push(result2);
           }
         });
 
         $('#hold2').click(function() {
-          playerones2.forEach(function(playerone) {
+          playerTwos.forEach(function(playerone) {
              score += playerone;
           });
           document.getElementById('score2').innerHTML = score;
-          total2 += score;
+          totalTwo += score;
           score = 0;
-          playerones2 = [];
+          playerTwos = [];
           $("#buttons").show();
           $("#button").hide();
 
-          document.getElementById('scorer2').innerHTML = total2;
+          document.getElementById('scorer2').innerHTML = totalTwo;
         });
 
 

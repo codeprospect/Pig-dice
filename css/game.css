@@ -1,5 +1,8 @@
 .container {
+  position: absolute;
   opacity: 0.9;
+  top: 50%;
+  transform: translate(30%, -50%);
 }
 body {
   background-image: url('../img/pig.jpg');

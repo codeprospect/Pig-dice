@@ -1,5 +1,7 @@
+
 body {
   background-color: #0c2142;
+  background-image: url(../img/pig.jpg);
 }
 h1 {
   text-align: center;
@@ -13,4 +15,7 @@ h1 {
 }
 #rules {
   opacity: 0.9;
+}
+#onedii {
+  background-color: pink;
 }
