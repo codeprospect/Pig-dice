@@ -27,6 +27,7 @@ var totalTwo = 0;
       $("#kichwa2").append(second);
       $(".choices").hide();
       $(".onedice").fadeIn();
+      $(".newgame").fadeIn();
       $("#form").hide();
     });
 
