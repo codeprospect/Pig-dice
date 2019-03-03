@@ -32,17 +32,97 @@
                 </ul>
               </div>
               <div class="panel-footer" style="background-color: #cc00cc; text-align: center;">
-                <a href="game.html"><button type="button" name="button" class="btn btn-info" id="onedii">Pig Dice</button></a>
+                <button type="button" name="button" class="btn btn-info" id="onedii">Pig Dice</button>
               </div>
             </div>
+
+
 
             </div>
         </div>
 
-      <div class="row" id="player">
+        <form id="form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="first player's name" id="firstPlayerName">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="second player's name" id="secondPlayerName">
+          </div>
+          <div class="play">
+            <a href="game.html"><button type="submit" class="btn btn-warning" id="play">PLAY GAME</button></a>
+          </div>
+
+        </form>
+
+        <div class="onedice">
+          <div class="rows">
+          <div class="col-md-6" id="playerone">
+            <h1 id="kichwa"></h1>
+
+            <div class="scorer">
+              <p><strong>SCORE: <span id="scorer1"></span> </strong></p>
+            </div>
+
+            <div class="mascore">
+              <p>DICE: <span id="dice1"></span> &nbsp &nbsp &nbsp &nbsp &nbsp SCORE: <span id="score1"></span></p>
+            </div>
+
+            <div id="buttons">
+              <p><button type="button" name="button" id="roll1" class="btn btn-danger">ROLL</button></p>
+              <p><button type="button" name="button" id="hold1" class="btn btn-danger">HOLD</button></p>
+            </div>
+
+            <div id="messageA">
+              <h1>OOPS! YOU ROLLED A ONE</h1>
+            </div>
+
+            <div id="messageB">
+              <h1>AFRAID OF GETTING A ONE?</h1>
+            </div>
 
 
-    </div>
+          </div>
+
+<!-- this is the player two section -->
+              <div class="col-md-6" id="playertwo">
+                <h1 id="kichwa2"></h1>
+
+                <div class="scorer">
+                  <p><strong>SCORE: <span id="scorer2"></span> </strong></p>
+                </div>
+
+                <div class="mascore">
+                  <p>DICE: <span id="dice2"></span>  &nbsp &nbsp &nbsp &nbsp &nbsp SCORE: <span id="score2"></span> </p>
+                </div>
+
+                <div id="button">
+                  <p><button type="button" name="button" id="roll2" class="btn btn-primary">ROLL</button></p>
+                  <p><button type="button" name="button" id="hold2" class="btn btn-primary">HOLD</button></p>
+                </div>
+
+                <div id="message">
+                  <h1>OOPS! YOU ROLLED A ONE</h1>
+                </div>
+
+                <div id="message2">
+                  <h1>AFRAID OF GETTING A ONE?</h1>
+                </div>
+
+              </div>
+            </div>
+            </div>
+
+            <div class="result">
+              <h1 id="ouput">adsvcsdfvsdfvaesvaervaedrfvrseavr</h1>
+            </div>
+
+            <div class="result2">
+              <h1 id="ouput2">adsvcsdfvsdfvaesvaervaedrfvrseavr</h1>
+            </div>
+
+            <div class="newgame">
+              <a href="index.html"><button type="button" name="button"></button></a> 
+            </div>
 
     </div>
 

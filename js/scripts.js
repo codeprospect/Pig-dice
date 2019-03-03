@@ -2,8 +2,6 @@ $(document).ready(function() {
 
 function team(players, results, total) {
   this.players = players;
-  this.results = results;
-  this.total = total;
 }
 
 var score = 0;
@@ -14,6 +12,25 @@ var playerTwos = [];
 var totalTwo = 0;
 
 //this is the one pig section
+
+    $("#onedii").click(function() {
+      $("#form").fadeIn();
+    });
+
+    $("#play").click(function(event) {
+      event.preventDefault();
+      var firstPlayer = new team($("input#firstPlayerName").val());
+      var secondPlayer = new team($("input#secondPlayerName").val());
+      var first = firstPlayer.players.toUpperCase();
+      var second = secondPlayer.players.toUpperCase();
+      $("#kichwa").append(first);
+      $("#kichwa2").append(second);
+      $(".choices").hide();
+      $(".onedice").fadeIn();
+      $("#form").hide();
+    });
+
+
     $("#roll1").click(function playOne () {
       var result = Math.floor(Math.random() * 6 + 1);
       document.getElementById('dice1').innerHTML =  result;
@@ -55,7 +72,7 @@ var totalTwo = 0;
 
           if (totalOne >= 100) {
             $(".onedice").hide();
-            document.getElementById('ouput').innerHTML = "HAS WON THE GAME" ;
+            document.getElementById('ouput').innerHTML = first + "HAS WON THE GAME" ;
             $(".result").show();
           }
 
@@ -98,7 +115,7 @@ var totalTwo = 0;
 
           if (totalTwo >= 100) {
             $(".onedice").hide();
-            document.getElementById('ouput').innerHTML = "HAS WON THE GAME" ;
+            document.getElementById('ouput').innerHTML = second + "HAS WON THE GAME" ;
             $(".result").show();
           }
         });

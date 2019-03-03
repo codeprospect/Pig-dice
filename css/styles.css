@@ -19,3 +19,90 @@ h1 {
 #onedii {
   background-color: pink;
 }
+.play {
+  text-align: center;
+}
+#form {
+  background-color: #e634ef;
+  padding: 20px;
+  opacity: 0.9;
+  display: none;
+}
+.onedice {
+  opacity: 0.9;
+}
+.result {
+  opacity: 0.9;
+  top: 50%;
+  transform: translate(40%, -50%);
+  position: absolute;
+  padding: 30px;
+  padding: 50px;
+  background-color: #ff7777;
+  display: none;
+}
+.result2 {
+  opacity: 0.9;
+  top: 50%;
+  transform: translate(40%, -50%);
+  position: absolute;
+  padding: 30px;
+  padding: 50px;
+  background-color: #3e7ce0;
+  display: none;
+}
+body {
+  background-image: url('../img/pig.jpg');
+}
+#buttons {
+  text-align: center;
+  clear: both;
+}
+#playerone {
+  padding: 50px;
+  background-color: #ff7777;
+}
+#playertwo {
+  padding: 50px;
+  background-color: #3e7ce0;
+}
+#dice1 {
+  border-style: solid;
+  border-width: 0.1px;
+  padding: 5px;
+  border-left: 5px solid red;
+}
+#dice2 {
+  border-style: solid;
+  border-width: 0.1px;
+  padding: 5px;
+  border-left: 5px solid blue;
+}
+h1 {
+  text-align: center;
+}
+#kichwa, #kichwa2 {
+  font-size: 60px;
+}
+#kichwa {
+  color: red;
+}
+#kichwa2 {
+  color: blue;
+}
+.mascore {
+  text-align: center;
+  font-size: 17px;
+}
+#button {
+  text-align: center;
+  clear: both;
+  display: none;
+}
+.scorer {
+  text-align: center;
+  font-size: 30px;
+}
+#messageA, #messageB, #message2, #message, .newgame {
+  display: none;
+}
