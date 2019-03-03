@@ -108,4 +108,5 @@ h1 {
 }
 .newgame {
   text-align: center;
+  clear: both;
 }
