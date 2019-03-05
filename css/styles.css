@@ -110,3 +110,9 @@ h1 {
   text-align: center;
   clear: both;
 }
+#buttons {
+  display: none;
+}
+#roll2, #hold2 {
+  display: none;
+}

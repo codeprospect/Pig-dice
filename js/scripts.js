@@ -27,6 +27,7 @@ var totalTwo = 0;
       $("#kichwa2").append(second);
       $(".choices").hide();
       $(".onedice").fadeIn();
+      $("#buttons").fadeIn();
       $(".newgame").fadeIn();
       $("#form").hide();
     });
@@ -41,11 +42,10 @@ var totalTwo = 0;
         playerOnes = [];
         totalOne += result;
         document.getElementById('score1').innerHTML = score;
-        $("#buttons").hide();
-        $("#button").show();
-        $("#messageA").show();
-        $("#message").hide();
-        $("#message2").hide();
+        $("#roll1").hide();
+        $("#roll2").show();
+        $("#hold1").hide();
+        $("#hold2").show();
       } else {
         playerOnes.push(result);
       }
@@ -61,11 +61,10 @@ var totalTwo = 0;
           totalOne += score;
           score = 0;
           playerOnes = [];
-          $("#buttons").hide();
-          $("#button").show();
-          $("#messageB").show();
-          $("#message").hide();
-          $("#message2").hide();
+          $("#roll1").hide();
+          $("#roll2").show();
+          $("#hold1").hide();
+          $("#hold2").show();
           totalOne += score;
 
 
@@ -87,11 +86,10 @@ var totalTwo = 0;
             score = 0;
             playerTwos = [];
             totalTwo + score;
-            $("#buttons").show();
-            $("#button").hide();
-            $("#message").show();
-            $("#messageA").hide();
-            $("#messageB").hide();
+            $("#roll1").show();
+            $("#roll2").hide();
+            $("#hold1").show();
+            $("#hold2").hide();
             document.getElementById('score2').innerHTML = score;
           } else {
             playerTwos.push(result2);
@@ -106,11 +104,10 @@ var totalTwo = 0;
           totalTwo += score;
           score = 0;
           playerTwos = [];
-          $("#buttons").show();
-          $("#button").hide();
-          $("#message2").show();
-          $("#messageA").hide();
-          $("#messageB").hide();
+          $("#roll1").show();
+          $("#roll2").hide();
+          $("#hold1").show();
+          $("#hold2").hide();
 
           document.getElementById('scorer2').innerHTML = totalTwo;
 
